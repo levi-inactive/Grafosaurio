@@ -18,7 +18,7 @@ int main(){
     if (i_op == 1)
     {
         printf("Reading from file :)\n");
-        AdjLgraph = GRAPH_ADJ_LIST("clase_input2.txt");
+        AdjLgraph = GRAPH_ADJ_LIST(".txt");
     }
     else
     {
@@ -73,7 +73,14 @@ int main(){
                     printf("El grafo NO es susceptible de ser recorrido (traversable)\n");
                 break;
             case 5: 
-                
+                int n2;
+                scanf("%d",&n2);
+                GRAPH_ADJ_LIST AdjLgraph_2 = GRAPH_ADJ_LIST(n2);
+                int gradoA = AdjLgraph.GetGraphGrade();
+                int gradoB = AdjLgraph_2.GetGraphGrade();
+                if(AdjLgraph.getV() == AdjLgraph_2.getV())
+                    if( gradoA && gradoB)
+                        printf("Es isomorfo\n");
                 break;
         }
         system("pause");

@@ -139,11 +139,11 @@ void LeerTrazos(int key)
     nodo_visited aux;
     if (key == 1)
     {
-        //GRAPH_ADJ_LIST("parte3_input/tv_input.txt");
-        GRAPH_ADJ_LIST("parte3_input/twsv_input.txt");
+        GRAPH_ADJ_LIST("parte3_input/tv_input.txt");
+        //GRAPH_ADJ_LIST("parte3_input/twsv_input.txt");
         FILE *fp;
-        //fp = fopen("parte3_input/te_input.txt", "r");
-        fp = fopen("parte3_input/twse_input.txt","r");
+        fp = fopen("parte3_input/te_input.txt", "r");
+        //fp = fopen("parte3_input/twse_input.txt","r");
         rewind(fp);
         fscanf(fp, "%d", &P);
         for (int i = 0; i < P; i++)

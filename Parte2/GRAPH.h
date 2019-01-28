@@ -37,6 +37,16 @@ public:
         }
         fclose(fp);
     }
+    int getV(){
+        return V;
+    }
+    int GetGraphGrade(){
+        int grade = 0;
+        for(int i = 1; i <= V; i++){
+            grade += (int)AdjList[i].size();
+        }
+        return grade;
+    }
     GRAPH_ADJ_LIST(int N){
 
         int id, total_neighbors, weight;

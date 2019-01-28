@@ -123,11 +123,11 @@ void PrintGraph() {
 void LeerPuentes(int key){
     int P, x,y;
     if(key==1){
-        //AdjList_graph = GRAPH_ADJ_LIST("parte3_input/puentes_nodos_input.txt");
-        GRAPH_ADJ_LIST("parte3_input/pwsv_input.txt");
+        GRAPH_ADJ_LIST("parte3_input/puentes_nodos_input.txt");
+        //GRAPH_ADJ_LIST("parte3_input/pwsv_input.txt");
         FILE *fp;
-        //fp = fopen("parte3_input/puentes_edges_input.txt","r");
-        fp = fopen("parte3_input/pwse_input.txt","r");
+        fp = fopen("parte3_input/puentes_edges_input.txt","r");
+        //fp = fopen("parte3_input/pwse_input.txt","r");
         rewind(fp);
         fscanf(fp, "%d", &P);
         puente_visited aux;
