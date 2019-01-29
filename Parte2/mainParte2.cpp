@@ -18,7 +18,7 @@ int main(){
     if (i_op == 1)
     {
         printf("Reading from file :)\n");
-        AdjLgraph = GRAPH_ADJ_LIST("clase_input.txt");
+        AdjLgraph = GRAPH_ADJ_LIST("clase_input2.txt");
     }
     else
     {
